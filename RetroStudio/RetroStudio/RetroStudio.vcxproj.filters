@@ -13,6 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Views">
+      <UniqueIdentifier>{abbb80ba-32ba-4cc6-a1fb-3c41cc3a356e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Views">
+      <UniqueIdentifier>{5bdf87f1-e14b-41a0-b375-35917c027f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Documents">
+      <UniqueIdentifier>{3f53252c-a88d-4a7a-9b98-57cd9e27d701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Documents">
+      <UniqueIdentifier>{d605250a-a0ab-4bd4-b643-6d89b6a8ea79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Dialogs">
+      <UniqueIdentifier>{002d2430-6591-4377-983b-5fa3a79c9b9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Dialogs">
+      <UniqueIdentifier>{366d7ba1-e34b-4499-87f8-18945f8a3c8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RetroStudio.h">
@@ -27,17 +45,20 @@
     <ClInclude Include="MainFrm.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="MainDocument.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MainView.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MainView.h">
+      <Filter>Fichiers d%27en-tête\Views</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDocument.h">
+      <Filter>Fichiers d%27en-tête\Documents</Filter>
+    </ClInclude>
+    <ClInclude Include="AboutDlg.h">
+      <Filter>Fichiers d%27en-tête\Dialogs</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -47,14 +68,17 @@
     <ClCompile Include="MainFrm.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="MainDocument.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="MainView.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Views</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="MainDocument.cpp">
+      <Filter>Fichiers sources\Documents</Filter>
+    </ClCompile>
+    <ClCompile Include="AboutDlg.cpp">
+      <Filter>Fichiers sources\Dialogs</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
