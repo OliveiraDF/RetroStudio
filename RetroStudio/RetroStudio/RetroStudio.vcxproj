@@ -100,11 +100,11 @@
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)extlibs\RetroCode\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\extlibs\RetroCode\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)extlibs\RetroCode\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\extlibs\RetroCode\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>RetroCore.lib;RetroMFC.lib</AdditionalDependencies>
     </Link>
     <Midl>
@@ -126,11 +126,11 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)extlibs\RetroCode\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\extlibs\RetroCode\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)extlibs\RetroCode\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\extlibs\RetroCode\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>RetroCore.lib;RetroMFC.lib</AdditionalDependencies>
     </Link>
     <Midl>
@@ -154,13 +154,13 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)extlibs\RetroCode\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\extlibs\RetroCode\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)extlibs\RetroCode\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\extlibs\RetroCode\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>RetroCore.lib;RetroMFC.lib</AdditionalDependencies>
     </Link>
     <Midl>
@@ -184,13 +184,13 @@
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)extlibs\RetroCode\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\extlibs\RetroCode\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)extlibs\RetroCode\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\extlibs\RetroCode\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>RetroCore.lib;RetroMFC.lib</AdditionalDependencies>
     </Link>
     <Midl>
