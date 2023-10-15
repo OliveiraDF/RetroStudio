@@ -25,4 +25,5 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
             
     - name: Run MSBuild
-      run: msbuild RetroStudio\RetroStudio.sln -property:Configuration=Release
+      working-directory: RetroStudio
+      run: msbuild RetroStudio.sln -property:Configuration=Release
