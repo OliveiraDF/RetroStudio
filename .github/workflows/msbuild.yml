@@ -18,8 +18,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: RetroTechnique/RetroCode
-        path: RetroCode
-        ref: v1.0.0.1
+        path: extlibs/RetroCode
+        ref: v1.0.0.2
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1

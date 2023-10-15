@@ -116,6 +116,7 @@ BOOL CMainApp::InitInstance()
 	m_pMainWnd->DragAcceptFiles();
 	return TRUE;
 }
+
 // Commande App pour exécuter la boîte de dialogue
 void CMainApp::OnAppAbout()
 {
