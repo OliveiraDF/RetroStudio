@@ -68,7 +68,6 @@ END_MESSAGE_MAP()
 HBRUSH CAboutDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT uCtlColor)
 {
 	return RetroVisualManager::OnCtlColor(pDC, pWnd, uCtlColor);
-	return NULL;
 }
 
 int CAboutDlg::OnCreate(LPCREATESTRUCT lpCreateStruct)
