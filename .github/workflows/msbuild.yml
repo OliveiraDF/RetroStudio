@@ -14,12 +14,21 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    # - name: Checkout RetroCode library
+    #   uses: actions/checkout@v2
+    #   with:
+    #     repository: RetroTechnique/RetroCode
+    #     path: RetroStudio/extlibs/RetroCode
+    #     ref: v1.0.0.2
+
     - name: Checkout RetroCode library
-      uses: actions/checkout@v2
+      uses: robinraju/release-downloader@v1.8
       with:
         repository: RetroTechnique/RetroCode
-        path: RetroStudio/extlibs/RetroCode
-        ref: v1.0.0.2
+        tag: v1.0.0.2
+        fileName: RetroCode-runtime-v1.0.0.2-x64.zip
+        extract: true
+        out-file-path: RetroStudio
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1

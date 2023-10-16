@@ -12,7 +12,4 @@
 
 #include <RetroCode/MFC.h>
 
-#pragma comment(lib, "RetroCore.lib")
-#pragma comment(lib, "RetroMFC.lib")
-
 #endif //PCH_H
