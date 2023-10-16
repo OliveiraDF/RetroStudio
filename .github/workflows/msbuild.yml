@@ -26,9 +26,9 @@ jobs:
       with:
         repository: RetroTechnique/RetroCode
         tag: v1.0.0.2
-        fileName: RetroCode-runtime-v1.0.0.2-x64.zip
+        fileName: RetroCode-github-v1.0.0.2-x64.zip
         extract: true
-        out-file-path: RetroStudio
+        out-file-path: RetroStudio/extlibs
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1
