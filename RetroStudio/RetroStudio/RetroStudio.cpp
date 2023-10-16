@@ -8,9 +8,9 @@
 #include "afxdialogex.h"
 #include "RetroStudio.h"
 #include "MainFrm.h"
-
 #include "MainDocument.h"
 #include "MainView.h"
+#include "AboutDlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -66,7 +66,7 @@ BOOL CMainApp::InitInstance()
 	// Changez la clé de Registre sous laquelle nos paramètres sont enregistrés
 	// TODO: modifiez cette chaîne avec des informations appropriées,
 	// telles que le nom de votre société ou organisation
-	SetRegistryKey(_T("Applications locales générées par AppWizard"));
+	SetRegistryKey(_T("Retro Technique"));
 	LoadStdProfileSettings(4);  // Charge les options de fichier INI standard (y compris les derniers fichiers utilisés)
 
 
@@ -116,41 +116,6 @@ BOOL CMainApp::InitInstance()
 	m_pMainWnd->DragAcceptFiles();
 	return TRUE;
 }
-
-// gestionnaires de messages de CMainApp
-
-
-// boîte de dialogue CAboutDlg utilisée pour la boîte de dialogue 'À propos de' pour votre application
-
-class CAboutDlg : public CDialogEx
-{
-public:
-	CAboutDlg() noexcept;
-
-// Données de boîte de dialogue
-#ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_ABOUTBOX };
-#endif
-
-protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // Prise en charge de DDX/DDV
-
-// Implémentation
-protected:
-	DECLARE_MESSAGE_MAP()
-};
-
-CAboutDlg::CAboutDlg() noexcept : CDialogEx(IDD_ABOUTBOX)
-{
-}
-
-void CAboutDlg::DoDataExchange(CDataExchange* pDX)
-{
-	CDialogEx::DoDataExchange(pDX);
-}
-
-BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
-END_MESSAGE_MAP()
 
 // Commande App pour exécuter la boîte de dialogue
 void CMainApp::OnAppAbout()

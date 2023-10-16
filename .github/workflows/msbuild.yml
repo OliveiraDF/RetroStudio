@@ -1,10 +1,10 @@
 name: Build
 
-on:
-  push:
-    branches: [ "master" ]
+on: 
   pull_request:
-    branches: [ "master" ]
+    branches:
+      - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,8 +14,17 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Checkout RetroCode library
+      uses: robinraju/release-downloader@v1.8
+      with:
+        repository: RetroTechnique/RetroCode
+        tag: v1.0.0.2
+        fileName: RetroCode-github-v1.0.0.2-x64.zip
+        extract: true
+        out-file-path: RetroStudio/extlibs
+
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.1
             
     - name: Run MSBuild
-      run: msbuild build\RetroStudio\RetroStudio.sln -property:Configuration=Release
+      run: msbuild RetroStudio\RetroStudio.sln -property:Configuration=Release
